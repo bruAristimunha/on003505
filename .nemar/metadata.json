@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
-  "description": "VEPCON is a multimodal neuroimaging dataset comprising high-density EEG, structural MRI, and diffusion-weighted imaging from 20 participants performing visual discrimination tasks (face vs. scrambled faces, coherent vs. incoherent motion). The dataset includes preprocessed EEG single trials, individual brain parcellations at five spatial resolutions, structural connectomes derived from diffusion data, and EEG source imaging solutions based on individual anatomy. This resource supports multimodal methods development, structure-function relationship studies, and optimization of source imaging and graph analysis techniques.",
-  "methods_description": "High-density EEG was recorded during two visual discrimination tasks (faces and motion coherence). Structural MRI and diffusion-weighted images were acquired in a separate session. EEG preprocessing included single-trial extraction for each condition. Structural MRIs were processed with Freesurfer 7.1.1 to generate brain parcellations at five spatial resolutions (83-1015 regions) and structural connectomes based on fiber count, fiber density, fractional anisotropy, and mean diffusivity. EEG inverse solutions were computed using individual anatomy and boundary element models.",
+  "description": "VEPCON is a multimodal BIDS dataset with high-density EEG, structural MRI and diffusion-weighted imaging from 20 participants. Visual evoked potentials were recorded during face versus scrambled-face discrimination and coherent versus incoherent motion discrimination. Derivatives include preprocessed single-trial EEG, FreeSurfer outputs, multi-scale brain parcellations (83 to 1015 regions), structural connectomes, and EEG source-imaging inverse solutions, supporting multimodal methods development and structure-function studies.",
+  "methods_description": "High-density EEG was recorded while participants discriminated briefly presented faces from scrambled faces (task-faces) or coherent from incoherent motion (task-motion). Structural MRI and DWI were acquired in a separate session. Derivatives include FreeSurfer 7.1.1 reconstructions, MNE-generated BEM models, parcellations at 5 resolutions, and connectomes based on fiber count, fiber density, fractional anisotropy and mean diffusivity.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,29 +23,29 @@
       "term": "EEG"
     },
     {
-      "term": "visual evoked potentials"
+      "term": "Evoked Potentials, Visual"
     },
     {
       "term": "source imaging"
     },
     {
-      "term": "brain parcellation"
+      "term": "diffusion weighted imaging"
     },
     {
       "term": "structural connectome"
     },
     {
-      "term": "diffusion weighted imaging"
+      "term": "brain parcellation"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "Magnetic Resonance Imaging"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-021-01116-1",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on003505",
@@ -84,7 +84,7 @@
     "eeg"
   ],
   "sizes": [
-    "60.9 GB (8017 files)"
+    "56.68 GB (8017 files)"
   ],
   "formats": [
     ".1/sub-01/bem/watershed/sub-01_brain_surface",
